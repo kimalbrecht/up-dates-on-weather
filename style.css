@@ -50,9 +50,16 @@ section>* {
     overflow: scroll;
 }
 
-img {
+section p, section h1 {
+    min-width: 250px;
+}
+
+
+img,
+video {
     padding: 0;
     max-width: 600px;
+    /* max-height: 400px; */
     object-fit: cover;
 }
 
@@ -61,4 +68,9 @@ img {
     src: url("./static/arialnarrow.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+}
+
+::selection {
+    background-color: yellow;
+    color: black;
 }
