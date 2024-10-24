@@ -2,5 +2,5 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-    base: '',
+    base: 'up-dates-on-weather',
 });
