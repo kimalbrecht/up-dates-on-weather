@@ -11,8 +11,8 @@ body {
     padding: 10px;
     max-width: 1920px;
     margin: 0 auto;
-    font-size: clamp(18px, 1.2vw, 20px);
-
+    font-size: clamp(14px, 1.2vw, 16px);
+    text-rendering: geometricPrecision;
 }
 
 a {
@@ -40,14 +40,39 @@ section {
     gap: 10px;
 }
 
-section h2 {
+
+.rotate {
+    display: flex;
+    align-items: flex-end;
+    /* height: 100%; */
+    background: none;
+    max-width: 30px;
+    padding: 0;
+}
+
+.rotate h3,
+.rotate h2 {
     transform: rotate(-90deg);
     white-space: nowrap;
-    vertical-align: middle;
-    top: 80%;
-    position: relative;
-    width: 65px;
+    transform-origin: top left;
+    width: auto;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    padding: 0px;
+    margin: 0;
+    margin-bottom: -1rem;
 }
+
+.rotate h2 {
+    font-size: 1.8rem;
+}
+
+.rotate h3 {
+    font-size: 1.5rem;
+}
+
+
 
 section>* {
     flex: 1;
@@ -75,7 +100,7 @@ img,
 video {
     padding: 0;
     max-width: 600px;
-    /* max-height: 400px; */
+
     object-fit: cover;
 }
 
