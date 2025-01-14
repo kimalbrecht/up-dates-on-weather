@@ -38,7 +38,15 @@ section {
     flex-wrap: wrap;
     padding: 10px;
     gap: 10px;
+}
 
+section h2 {
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    vertical-align: middle;
+    top: 80%;
+    position: relative;
+    width: 65px;
 }
 
 section>* {
